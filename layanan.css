@@ -1,0 +1,386 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #fdfdfd;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    color: #fafafa;
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: center;
+}
+.container h2{
+    margin-top: 50px;
+    line-height: 45px;
+    -ms-text-justify: ;
+    text-align: left;
+    font-family: 'popins' sans-serif;
+    font-size: 3rem;
+    
+}
+.container p{
+    text-align: left;
+    
+}
+.red{
+    color:rgb(255, 0, 255);
+    weight:200px;
+    height:300; 
+
+}
+
+
+
+/*whatsaap*/
+.whatsapp-button {
+    display: inline-flex;
+    align-items: left;
+    background-color: #00ff0d; /* Warna hijau WhatsApp */
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    
+  }
+
+  /* Gaya ikon WhatsApp */
+  .whatsapp-button img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    
+  }
+
+  /* Efek hover */
+  .whatsapp-button:hover {
+    background-color: #128C7E; /* Warna lebih gelap saat hover */
+  }
+
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Kolom responsif */
+    gap: 15px; /* Jarak antar gambar */
+    padding: 20px;
+    background-color: none;
+  }
+  
+  .grid-item img {
+    width: 100%;
+    border-radius: 10px; /* Sudut melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan */
+    transition: transform 0.3s ease;
+  }
+  
+  /* Efek hover pada gambar */
+  .grid-item img:hover {
+    transform: scale(1.05); /* Zoom in saat hover */
+  }
+  
+  /* Tombol WhatsApp */
+  .whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #25D366; /* Warna hijau khas WhatsApp */
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Bayangan */
+    transition: background-color 0.3s ease;
+  }
+  
+  .whatsapp-button img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+  
+  /* Hover efek pada tombol */
+  .whatsapp-button:hover {
+    background-color: #128C7E; /* Warna lebih gelap */
+  }
+
+-----
+/* Features Section */
+.features {
+    background-color: #f703ca;
+    padding: 50px 20px;
+    margin-top: 50px;
+}
+
+.features h4 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.feature-list {
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    color: #ffffff;
+    border-radius: 130px;
+}
+
+.feature {
+    background-color: #ff008c;
+    padding: 20px; 20px
+    border-radius: 20px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.feature i {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.feature h4 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Footer Styles */
+/* Header Styles */
+header {
+    background-color: #ffffff;
+    color: #070228;
+    padding: 20px 0;
+}
+
+header img {
+    
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    font-weight: bold;
+    color: #1c0639;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+header nav ul li a:hover {
+    background-color: #0050a5;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #f3f3f3;
+    color: #1f0429;
+    text-align: center;
+    padding: 50px 50px;
+    
+}
+
+.hero h1 {
+    font-size:0px;
+    margin-bottom: 20px;
+    text-align: left;
+    line-height: 1;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #0056b3;
+    
+}
+section
+.h1 .float{ 
+    .floating-text{
+        font-size: 2rem;
+        font-weight: bold;
+        color: #3498db; /* Warna biru */
+        animation: float 3s ease-in-out infinite; /* Nama animasi */
+        text-align: center;
+        margin-top: 100px; /* Jarak dari atas halaman */
+      }
+  
+      /* Definisi animasi */
+      @keyframes float {
+        0%, 100% {
+          transform: translateY(0); /* Posisi awal */
+        }
+        50% {
+          transform: translateY(-20px); /* Bergerak ke atas */
+        }
+      }
+}
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg); /* Posisi awal */
+    opacity: 1; /* Transparansi penuh */
+  }
+  50% {
+    transform: translateY(-20px) rotate(5deg); /* Naik dan miring */
+    opacity: 0.8; /* Sedikit transparan */
+  }
+}
+
+
+footer {
+    background-color: #1b0536;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin-bottom: 10px;
+    
+}
+
+footer .socials {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer .socials li {
+    display: inline;
+}
+
+footer .socials li a {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+footer .socials li a:hover {
+    color: #007bff;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .feature-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+/* Responsiveness */
+@media (max-width: 768px) {
+    .feature {
+        flex: 1 1 100%;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 30px 0;
+    }
+
+    .btn {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
+/* Responsiveness */
+@media (max-width: 768px) {
+    img {
+        flex: 1 1 100%;
+    }
+
+    img {
+        -webkit-box-sizing: border-box;
+        display: block;
+        display: flex;
+  
+        
+
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    /* Media Queries */
+@media (max-width: 768px) {
+    .grid-container {
+        flex-direction: column;
+        align-items: center;
+    }
